@@ -1,0 +1,93 @@
+@font-face {
+     font-family: 'FoundersGrotesk';
+     src: url('/fonts/Founders/FoundersGrotesk-Bold.otf') format('opentype');
+     font-display: swap;
+}
+
+@font-face {
+     font-family: 'Inter';
+     src: url('/fonts/Inter/Inter-Regular.ttf') format('truetype');
+     font-display: swap;
+}
+
+.link-hover a {
+     text-decoration: none;
+     font-family: 'Inter';
+     color: #1c1c1c;
+     font-weight: 400;
+}
+
+.link-hover {
+     position: relative;
+     height: 30px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     overflow: hidden;
+}
+
+.link-hover span {
+     position: absolute;
+     bottom: 0;
+     height: 2px;
+     width: 100%;
+     background-color: #1c1c1c;
+}
+
+.link-hover a:hover + span {
+     font-weight: 700;
+     animation: hover-in 300ms ease-in-out forwards;
+     transform-origin: left;
+}
+.link-hover a:not(:hover) + span {
+     font-weight: 700;
+     animation: hover-out 300ms ease-in-out forwards;
+     transform-origin: right;
+}
+
+@keyframes hover-in {
+     0% {
+          transform: scaleX(0);
+     }
+     100% {
+          transform: scaleX(1);
+     }
+}
+@keyframes hover-out {
+     0% {
+          transform: scaleX(1);
+     }
+     100% {
+          transform: scaleX(0);
+     }
+}
+
+::-webkit-scrollbar {
+     width: 8px;
+}
+
+::-webkit-scrollbar-track {
+     background: none;
+     background: #e6e6e6;
+}
+
+::-webkit-scrollbar-thumb {
+     background: #4f4f4f;
+}
+
+::-webkit-scrollbar-thumb:hover {
+     background: #2b2b2b;
+}
+
+@media only screen and (max-width: 768px) {
+     .container .title p {
+          font-size: 20px;
+     }
+     .container .title h3 {
+          font-size: 40px !important;
+     }
+}
+
+.button:active {
+     transform: scale(0.8);
+}

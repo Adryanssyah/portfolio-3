@@ -1,0 +1,82 @@
+[
+     {
+          "id": 9,
+          "idn": { "name": "TryOutKu", "desc": "Kumpulan try out untuk tes masuk perkuliahan, kedinasan maupun pegawai negeri sipil." },
+          "eng": { "name": "TryOutKu", "desc": "A collection of tryouts for university entrance exams, civil service exams, and civil servant recruitment." },
+          "img": "tryout",
+          "link": false,
+          "tools": ["Vue", "Tailwind"]
+     },
+     {
+          "id": 8,
+          "idn": { "name": "Skedumate", "desc": "Berkolaborasi bersama atur jadwal seluruh kelompok di beberapa kelas atau angkatan." },
+          "eng": { "name": "Skedumate", "desc": "Collaborating to organize schedules for entire groups across multiple classes or cohorts." },
+          "img": "skedumate",
+          "link": false,
+          "tools": ["Vue", "Tailwind", "Express", "MongoDB"]
+     },
+     {
+          "id": 7,
+          "idn": { "name": "Portofolio Proyek Tim", "desc": "Portfolio Saya selama masa perkuliah yang dikerjakan secara tim." },
+          "eng": { "name": "Team Project Portfolio", "desc": "My portfolio during the university period, worked on collaboratively with a team." },
+          "img": "team-project",
+          "link": "https://bit.ly/project-kami",
+          "tools": ["Vue", "Tailwind"]
+     },
+     {
+          "id": 6,
+          "idn": { "name": "Match Generator", "desc": "Temukan kombinasi tim dalam permainan 1v1 atau 2v2." },
+          "eng": { "name": "Match Generator", "desc": "Discover team combinations in 1v1 or 2v2 games." },
+          "img": "match-generator",
+          "link": "https://bit.ly/Match-Generator",
+          "tools": ["Vue", "Tailwind"]
+     },
+     {
+          "id": 5,
+          "idn": { "name": "SIBAMIRA", "desc": "Aplikasi inventarisasi barang milik negara di Universitas Jambi." },
+          "eng": { "name": "SIBAMIRA", "desc": "State-owned inventory application at the University of Jambi." },
+          "img": "sibamira",
+          "link": "https://sibamira.unja.ac.id/",
+          "tools": ["Bootstrap", "jQuery"]
+     },
+     {
+          "id": 4,
+          "idn": {
+               "name": "Positiv Landing Page",
+               "desc": "Landing page untuk pengunjung pojok statistik Badan Pusat Statistik Provinsi Jambi."
+          },
+          "eng": {
+               "name": "Positiv Landing Page",
+               "desc": "Landing page for visitors to the statistical corner of the Central Statistics Agency of Jambi Province."
+          },
+          "img": "positiv-landing",
+          "link": "https://bpsjambi.id/positiv_jambi/public/",
+          "tools": ["HTML", "CSS"]
+     },
+     {
+          "id": 3,
+
+          "idn": { "name": "SiPHP", "desc": "Aplikasi pelaporan harian pegawai di Badan Pusat Statistik Provinsi Jambi." },
+          "eng": { "name": "SiPHP", "desc": "Daily employee reporting application at the Central Statistics Agency of Jambi Province." },
+          "img": "siphp",
+          "link": "https://bpsjambi.id/siphp/",
+          "tools": ["Bootstrap", "jQuery"]
+     },
+     {
+          "id": 2,
+
+          "idn": { "name": "SIPBetul", "desc": "Aplikasi pengelolaan berita di Badan Pusat Statistik Provinsi Jambi." },
+          "eng": { "name": "SIPBetul", "desc": "News management application at the Central Statistics Agency of Jambi Province." },
+          "img": "sipbetul",
+          "link": false,
+          "tools": ["Bootstrap", "jQuery"]
+     },
+     {
+          "id": 1,
+          "idn": { "name": "BPS Landing Page", "desc": "Portal aplikasi-aplikasi web yang ada di Badan Pusat Statistik Provinsi Jambi." },
+          "eng": { "name": "BPS Landing Page", "desc": "Portal of web applications existing at the Central Statistics Agency of Jambi Province." },
+          "img": "bps-landing",
+          "link": "https://bpsjambi.id/home/",
+          "tools": ["Bootstrap"]
+     }
+]
