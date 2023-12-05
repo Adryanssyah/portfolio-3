@@ -77,7 +77,7 @@ const scrollTo = (target) => {
 <template>
      <nav id="nav" :class="{ dark: sectionDark.includes(whichSection) }">
           <div class="container">
-               <div>
+               <div class="logos">
                     <a v-show="!sectionDark.includes(whichSection)" href="#" class="logo"><img src="@/assets/Images/logo/dark.svg" alt="Logo light" /></a>
                     <a v-show="sectionDark.includes(whichSection)" href="#" class="logo"><img src="@/assets/Images/logo/light.svg" alt="Logo light" /></a>
                </div>
@@ -88,13 +88,13 @@ const scrollTo = (target) => {
                               <span></span>
                          </div>
                     </li>
-                    <li>
-                         <LanguageToggle :dark="sectionDark.includes(whichSection)" />
-                    </li>
                </ul>
-               <div @click="toggleMobileNav" class="toggle">
-                    <span></span>
-                    <span></span>
+               <div class="buttons">
+                    <LanguageToggle :dark="sectionDark.includes(whichSection)" />
+                    <div @click="toggleMobileNav" class="toggle">
+                         <span></span>
+                         <span></span>
+                    </div>
                </div>
           </div>
           <div class="wrapper">
@@ -106,9 +106,6 @@ const scrollTo = (target) => {
                                         <a @click="scrollTo(menu)" :href="`#${menu}`">{{ menu }}</a>
                                         <span></span>
                                    </div>
-                              </li>
-                              <li>
-                                   <LanguageToggle :dark="true" />
                               </li>
                          </ul>
                          <div @click="toggleMobileNav" class="toggle">
@@ -138,18 +135,12 @@ nav {
 nav .container {
      width: 100%;
      max-width: 1300px;
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
      padding: 15px 20px 15px 20px;
 }
 
-nav .container .logo {
-     font-family: 'FoundersGrotesk';
-     font-weight: 900;
-     text-decoration: none;
-     color: black;
-     font-size: 25px;
+nav .container .logos {
      display: flex;
      align-items: center;
 }
@@ -160,10 +151,20 @@ nav .container .logo img {
 
 nav ul {
      list-style-type: none;
-     width: 50%;
+     width: 100%;
      max-width: 500px;
+     gap: 50px;
      display: flex;
      justify-content: space-between;
+     align-items: center;
+     text-align: center;
+}
+
+nav .container .buttons {
+     display: flex;
+     width: 100%;
+     justify-content: end;
+     gap: 30px;
      align-items: center;
 }
 
@@ -289,19 +290,16 @@ nav.dark .container .toggle span {
      background: #fff;
 }
 
-@media only screen and (max-width: 576px) {
-}
 @media only screen and (max-width: 768px) {
+     nav .container {
+          grid-template-columns: 1fr 1fr;
+     }
      nav .container ul {
           display: none;
      }
      nav .container .toggle {
           display: block;
      }
-}
-@media only screen and (max-width: 992px) {
-}
-@media only screen and (max-width: 1200px) {
 }
 
 .slide-in-enter-active,
