@@ -23,9 +23,8 @@ const lang = computed({
                     </router-link>
                     <div class="head2">
                          <h1 data-aos="fade-up" data-aos-delay="100">{{ lang === 'eng' ? 'My Projects' : 'Proyek Saya' }}</h1>
-                         <div data-aos="fade-up" data-aos-delay="150">
-                              <languageToggle :dark="true" />
-                         </div>
+
+                         <languageToggle :dark="true" data-aos="fade-up" data-aos-delay="50" />
                     </div>
                </div>
 
