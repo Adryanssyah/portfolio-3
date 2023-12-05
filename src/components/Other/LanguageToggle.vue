@@ -64,6 +64,7 @@ onMounted(() => {
 <style scoped>
 .outer {
      position: relative;
+     z-index: 50;
 }
 .box {
      padding: 10px;
