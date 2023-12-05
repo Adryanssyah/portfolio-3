@@ -5,13 +5,13 @@
                "title": "Kerja Bebas",
                "instance": "Universitas Jambi",
                "period": "Sept 2022 - Juli 2023",
-               "desc": "Mengembangkan sistem inventarisasi barang milik negara yang ada di Universitas Jambi"
+               "desc": "Mengembangkan sistem inventarisasi barang milik negara yang ada di Universitas Jambi."
           },
           "eng": {
                "title": "Freelance",
                "instance": "University of Jambi",
                "period": "Sept 2022 - July 2023",
-               "desc": "Developing an inventory system for state-owned assets at the University of Jambi"
+               "desc": "Developing an inventory system for state-owned assets at the University of Jambi."
           },
           "img": "unja",
           "tools": ["Bootstrap", "jQuery"]
@@ -22,13 +22,13 @@
                "title": "Magang",
                "instance": "Badan Pusat Statistik",
                "period": "Juni 2022 - Agu 2022",
-               "desc": "Mengembangkan beberapa aplikasi internal untuk menunjang kegiatan statistik"
+               "desc": "Mengembangkan beberapa aplikasi internal untuk menunjang kegiatan statistik di Badan Pusat Statistik Provinsi Jambi."
           },
           "eng": {
                "title": "Internship",
                "instance": "Central Statistics Agency",
                "period": "June 2022 - Aug 2022",
-               "desc": "Developing several internal applications to support statistical activities"
+               "desc": "Developing several internal applications to support statistical activities at the Central Statistics Agency of Jambi Province."
           },
           "img": "bps",
           "tools": ["Bootstrap", "jQuery"]

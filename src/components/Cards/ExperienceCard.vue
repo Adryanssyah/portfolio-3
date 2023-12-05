@@ -10,9 +10,9 @@ const lang = computed({
 </script>
 
 <template>
-     <div class="card">
+     <div class="card" :title="props.experience[lang].instance">
           <div class="head">
-               <img :src="`./images/experience/${props.experience.img}.webp`" :alt="props.experience.img" />
+               <img :src="`./images/experience/${props.experience.img}.webp`" :alt="`Logo ${props.experience[lang].instance}`" />
                <div class="title">
                     <h4>{{ props.experience[lang].title }}</h4>
                     <p>{{ props.experience[lang].period }}</p>
