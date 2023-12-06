@@ -12,7 +12,7 @@
           "idn": { "name": "Skedumate", "desc": "Berkolaborasi bersama atur jadwal seluruh kelompok di beberapa kelas atau angkatan." },
           "eng": { "name": "Skedumate", "desc": "Collaborating to organize schedules for entire groups across multiple classes or cohorts." },
           "img": "skedumate",
-          "link": false,
+          "link": "https://skedumate.vercel.app",
           "tools": ["Vue", "Tailwind", "Express", "MongoDB"]
      },
      {
