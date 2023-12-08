@@ -66,6 +66,7 @@ section {
      font-size: 50px;
      color: #fff;
      text-align: center;
+     height: 0;
 }
 
 .container .back-button {
@@ -100,6 +101,7 @@ section {
 @media only screen and (max-width: 758px) {
      .container h1 {
           font-size: 40px;
+          height: 0;
      }
      .container .back-button {
           width: 20px;
