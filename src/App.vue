@@ -1,22 +1,34 @@
 <script setup>
 import ScreenLoad from '@/components/Loader/ScreenLoad.vue';
-import { ref, onMounted } from 'vue';
+import { ref, computed, watch } from 'vue';
+import { useRoute } from 'vue-router';
 import AOS from 'aos';
 
 const loading = ref(true);
-onMounted(() => {
-     setTimeout(() => {
+const route = useRoute();
+const routeName = computed(() => route.name);
+
+const loadings = () => {
+     if (routeName.value !== 'NotFound') {
+          setTimeout(() => {
+               loading.value = false;
+          }, 1500);
+     } else {
           loading.value = false;
-          AOS.init({ once: true });
-     }, 1500);
+     }
+};
+
+AOS.init({ once: true });
+watch(routeName, (newValue) => {
+     loadings();
 });
 </script>
 
 <template>
      <router-view v-if="!loading"></router-view>
 
-     <Teleport to="body">
-          <transition name="slide"> <ScreenLoad v-if="loading" /> </transition>
+     <Teleport to="body" v-if="routeName !== 'NotFound'">
+          <transition name="slide"> <ScreenLoad v-if="loading && routeName !== 'NotFound'" /> </transition>
      </Teleport>
 </template>
 
