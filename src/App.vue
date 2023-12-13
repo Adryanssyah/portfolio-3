@@ -3,6 +3,7 @@ import ScreenLoad from '@/components/Loader/ScreenLoad.vue';
 import { ref, computed, watch } from 'vue';
 import { useRoute } from 'vue-router';
 import AOS from 'aos';
+import NavigateToTop from './components/Other/NavigateToTop.vue';
 
 const loading = ref(true);
 const route = useRoute();
@@ -30,6 +31,7 @@ watch(routeName, (newValue) => {
      <Teleport to="body" v-if="routeName !== 'NotFound'">
           <transition name="slide"> <ScreenLoad v-if="loading && routeName !== 'NotFound'" /> </transition>
      </Teleport>
+     <NavigateToTop />
 </template>
 
 <style>

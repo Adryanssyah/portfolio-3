@@ -1,14 +1,10 @@
 <script setup>
 import { ref, computed, onUnmounted, onMounted } from 'vue';
-import { useLanguageStore } from '@/stores/languageStore';
-const languageStore = useLanguageStore();
-
-const lang = computed({
-     get: () => languageStore.lang,
-});
-
-let visible = ref(false);
+const visible = ref(false);
 const windowTop = ref(0);
+const handleScroll = () => {
+     document.body.scrollTop = document.documentElement.scrollTop = 0;
+};
 
 onMounted(() => {
      window.addEventListener('scroll', onScroll);
@@ -22,17 +18,12 @@ const onScroll = (e) => {
      windowTop.value = e.target.documentElement.scrollTop;
      windowTop.value > 300 ? (visible.value = true) : (visible.value = false);
 };
-
-const status = { idn: `Tersedia untuk Bekerja`, eng: `Available to Work` };
 </script>
 
 <template>
      <div class="container">
           <Transition name="ease">
-               <div v-if="visible" class="box">
-                    <span></span>
-                    <div class="status">{{ status[lang] }}</div>
-               </div>
+               <button v-if="visible" class="box" @click="handleScroll" aria-label="Scroll to top"><i class="bi bi-chevron-double-up"></i></button>
           </Transition>
      </div>
 </template>
@@ -42,49 +33,38 @@ const status = { idn: `Tersedia untuk Bekerja`, eng: `Available to Work` };
      width: 100%;
      max-width: 1300px;
      position: fixed;
-     bottom: 0px;
+     bottom: -10px;
      right: 50%;
      transform: translate(50%, -50%);
      display: flex;
-     padding-left: 40px;
-     justify-content: start;
+     justify-content: end;
+     padding-right: 40px;
 }
-
-.container .box {
-     padding: 8px 30px 8px 30px;
-     border-radius: 50px;
-     border: 1px solid #454545;
+.box {
+     height: 45px;
+     width: 45px;
      background: rgba(0, 0, 0, 0.65);
      backdrop-filter: blur(10px);
+     border: 1px solid #454545;
      display: flex;
      align-items: center;
-     gap: 20px;
-     transition: 300ms;
+     justify-content: center;
+     color: white;
+     cursor: pointer;
+     border-radius: 10px;
+     outline: none;
+     transition: all 0.3s ease-in-out;
 }
 
-.container span {
-     width: 10px;
-     height: 10px;
-     border-radius: 100%;
-     background-color: greenyellow;
+.box:hover {
+     background: rgba(0, 0, 0, 0.85);
 }
 
-.container .status {
-     color: #fff;
-     font-family: Inter;
-     font-size: 12px;
-     white-space: nowrap;
-}
-@media (min-width: 640px) {
+@media (min-width: 1300px) {
      .container {
-          padding-left: 0px;
-          justify-content: center;
-     }
-     .container .status {
-          font-size: 14px;
+          padding-right: 0px;
      }
 }
-
 .ease-enter-active,
 .ease-leave-active {
      transition: all 250ms ease-in-out;
