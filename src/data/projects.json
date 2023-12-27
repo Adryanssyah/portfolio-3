@@ -1,11 +1,21 @@
 [
      {
+          "id": 10,
+          "idn": { "name": "HueEase", "desc": "Cari dan buat gradient warna dengan kombinasi warna Tailwind CSS yang beragam." },
+          "eng": { "name": "HueEase", "desc": "Explore and create gradients with various color combinations for your Tailwind CSS and CSS code." },
+          "img": "hueease",
+          "link": false,
+          "tools": ["React", "Tailwind"],
+          "released": false
+     },
+     {
           "id": 9,
           "idn": { "name": "TryOutKu", "desc": "Kumpulan try out untuk tes masuk perkuliahan, kedinasan maupun pegawai negeri sipil." },
           "eng": { "name": "TryOutKu", "desc": "A collection of tryouts for university entrance exams, civil service exams, and civil servant recruitment." },
           "img": "tryout",
           "link": false,
-          "tools": ["Vue", "Tailwind"]
+          "tools": ["Vue", "Tailwind"],
+          "released": false
      },
      {
           "id": 8,
@@ -13,7 +23,8 @@
           "eng": { "name": "Skedumate", "desc": "Collaborating to organize schedules for entire groups across multiple classes or cohorts." },
           "img": "skedumate",
           "link": "https://skedumate.vercel.app",
-          "tools": ["Vue", "Tailwind", "Express", "MongoDB"]
+          "tools": ["Vue", "Tailwind", "Express", "MongoDB"],
+          "released": true
      },
      {
           "id": 7,
@@ -21,7 +32,8 @@
           "eng": { "name": "Team Project Portfolio", "desc": "My portfolio during the university period, worked on collaboratively with a team." },
           "img": "team-project",
           "link": "https://bit.ly/project-kami",
-          "tools": ["Vue", "Tailwind"]
+          "tools": ["Vue", "Tailwind"],
+          "released": true
      },
      {
           "id": 6,
@@ -29,7 +41,8 @@
           "eng": { "name": "Match Generator", "desc": "Discover team combinations in 1v1 or 2v2 games." },
           "img": "match-generator",
           "link": "https://bit.ly/Match-Generator",
-          "tools": ["Vue", "Tailwind"]
+          "tools": ["Vue", "Tailwind"],
+          "released": true
      },
      {
           "id": 5,
@@ -37,7 +50,8 @@
           "eng": { "name": "SIBAMIRA", "desc": "State-owned inventory application at the University of Jambi." },
           "img": "sibamira",
           "link": "https://sibamira.unja.ac.id/",
-          "tools": ["Bootstrap", "jQuery"]
+          "tools": ["Bootstrap", "jQuery"],
+          "released": true
      },
      {
           "id": 4,
@@ -51,7 +65,8 @@
           },
           "img": "positiv-landing",
           "link": "https://bpsjambi.id/positiv_jambi/public/",
-          "tools": ["HTML", "CSS"]
+          "tools": ["HTML", "CSS"],
+          "released": true
      },
      {
           "id": 3,
@@ -60,7 +75,8 @@
           "eng": { "name": "SiPHP", "desc": "Daily employee reporting application at the Central Statistics Agency of Jambi Province." },
           "img": "siphp",
           "link": "https://bpsjambi.id/siphp/",
-          "tools": ["Bootstrap", "jQuery"]
+          "tools": ["Bootstrap", "jQuery"],
+          "released": true
      },
      {
           "id": 2,
@@ -69,7 +85,8 @@
           "eng": { "name": "SIPBetul", "desc": "News management application at the Central Statistics Agency of Jambi Province." },
           "img": "sipbetul",
           "link": false,
-          "tools": ["Bootstrap", "jQuery"]
+          "tools": ["Bootstrap", "jQuery"],
+          "released": true
      },
      {
           "id": 1,
@@ -77,6 +94,7 @@
           "eng": { "name": "BPS Landing Page", "desc": "Portal of web applications existing at the Central Statistics Agency of Jambi Province." },
           "img": "bps-landing",
           "link": "https://bpsjambi.id/home/",
-          "tools": ["Bootstrap"]
+          "tools": ["Bootstrap"],
+          "released": true
      }
 ]
