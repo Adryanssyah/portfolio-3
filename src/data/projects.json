@@ -4,7 +4,7 @@
           "idn": { "name": "HueEase", "desc": "Cari dan buat gradient warna dengan kombinasi warna Tailwind CSS yang beragam." },
           "eng": { "name": "HueEase", "desc": "Explore and create gradients with various color combinations for your Tailwind CSS and CSS code." },
           "img": "hueease",
-          "link": false,
+          "link": "https://hueease.vercel.app",
           "tools": ["React", "Tailwind"],
           "released": false
      },
